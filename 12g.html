@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App</title>
+  <link rel="stylesheet" href="/exercises/12g.css">
+</head>
+<body>
+  <button onclick="
+    messages++;
+    displayNotification();
+  ">Add</button>
+
+  <button onclick="
+    if (messages > 0) { 
+      messages--;
+      if (messages === 0) {
+        stopNotification();
+      }
+    }
+  ">Remove</button>
+
+
+  <script src="/exercises/12g.js"></script>
+</body>
+</html>

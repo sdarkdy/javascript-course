@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exersice9</title>
+</head>
+<body>
+  <button class="butt1">9a</button>
+  <button class="butt2">9b</button>
+
+
+  <button onclick=" 
+  document.querySelector('.js-choise')
+  .innerHTML = 'You chose: heads'
+  ">heads</button>
+
+  <button onclick="
+  document.querySelector('.js-choise')
+  .innerHTML = 'You chose: tails'
+  ">tails</button>
+
+  <p class="js-choise"></p>
+
+
+  <input placeholder="Name" class="js-name-input"
+      onkeydown="
+        if (event.key === 'Enter') {
+          displayMessage();
+        }
+      ">
+
+  <button onclick="
+      displayMessage();
+  ">Submit</button>
+
+  
+
+  <p>next</p>
+
+
+ <p>Amazon Shipping Calculator</p>
+ <input placeholder="Cost of order"
+ class="js-cost-input" onkeydown="
+ handleCostKeydown(event)
+ ">
+
+ <button onclick="
+ calculateTotal()
+ ">Calculate</button>
+ <p class="js-total-cost"></p>
+
+
+   <input placeholder="Type something" class="js-input"
+      onkeyup="
+        const inputElement = document.querySelector('.js-input');
+        document.querySelector('.js-message')
+          .innerHTML = inputElement.value;
+      ">
+
+      <p class="js-message"></p>
+      
+
+  
+
+  <script>
+
+    function handleCostKeydown(event){
+      console.log(event.key);
+     if ( event.key === 'Enter' ){
+        calculateTotal();
+     }
+    }
+
+    function calculateTotal(){
+      const inputElemnt = document.querySelector(`
+      .js-cost-input`);
+      let cost = Number(inputElemnt.value);
+      console.log(cost);
+      if (cost < 40 ) {
+        cost = (cost + 10).toFixed(2);
+      }
+
+      document.querySelector('.js-total-cost')
+      .innerHTML =`Your name is: ${cost}`;
+
+
+      
+    };
+
+
+
+
+
+
+
+
+
+
+
+      function displayMessage() {
+        const inputElement = document.querySelector('.js-name-input');
+        document.querySelector('.js-message')
+          .innerHTML = `Your name is: ${inputElement.value}`;
+      }
+   
+
+
+
+    console.log(document.querySelector('butt1'))
+
+
+    console.log(document.querySelector('butt2'));
+    document.querySelector('.butt2').innerHTML = '9b done'
+    </script>
+  
+
+</body>
+</html>

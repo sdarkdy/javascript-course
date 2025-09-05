@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>buttons on off</title>
+  <link rel="stylesheet" href="/styles/exersice10g.css">
+</head>
+<body>
+  <button class="toggle-button js-button-1" onclick="toggleButton('.js-button-1')">Gaming</button>
+  <button class="toggle-button js-button-2" onclick="toggleButton('.js-button-2')">Music</button>
+  <button class="toggle-button js-button-3" onclick="toggleButton('.js-button-3')">Tech</button>
+
+
+
+
+  
+
+
+
+
+  <p>Amazon Shipping Calculator</p>
+  <input placeholder="Cost of order"
+  class="js-cost-input cost-input" onkeydown="
+  handleCostKeydown(event)
+  ">
+
+  <button class="cal" onclick="
+  calculateTotal()
+  ">Calculate</button>
+  <p class="js-total-cost"></p>
+  <p class="js-error-message error-message err"></p>
+
+  <script src="/scripts/exersice10.js"></script>
+</body>
+</html>

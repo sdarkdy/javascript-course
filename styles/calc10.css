@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.cal1,
+.cal2{
+  background-color: rgb(160, 160, 160);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+    font-family: arial;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.cal2 {
+background-color: orange;
+}
+
+.res {
+  font-size: 45px;
+  margin: 0px;
+}
+.top-row {
+  margin-top: 5px;
+}
